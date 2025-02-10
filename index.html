@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng Giá Chứng Chỉ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="marquee-container">
+        <div class="marquee top-marquee">
+            <span class="rainbow-text">Chào mừng bạn đến với On个Top.Chúng tôi cung cấp dịch vụ chứng chỉ Apple an toàn cho các thiết bị ios</span>
+        </div>
+    </div>
+    <div class="social-links">
+        <a href="https://beacons.ai/minh21092k9" target="_blank" class="contact-btn">Liên Hệ</a>
+        <div id="authButtons" class="auth-buttons-container">
+            <p class="auth-message">Vui lòng đăng nhập hoặc đăng ký để mua hàng</p>
+            <button onclick="showLoginForm()" class="auth-btn">Đăng nhập</button>
+            <button onclick="showRegisterForm()" class="auth-btn">Đăng ký</button>
+        </div>
+        <div id="userProfile" style="display: none;">
+            <button onclick="showUserProfile()" class="auth-btn profile-btn">Hồ sơ</button>
+            <button onclick="logout()" class="auth-btn">Đăng xuất</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1>ᴄʜứɴɢ ᴄʜỉ ᴏɴ 个ᴛᴏᴘ</h1>
+        <h1>chứng chỉ giá rẻ,uy tín 100%,hoạt động trên Esign,Gbox,Scarlet</h1>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h2>Gói 1: Siêu Rẻ</h2>
+                <div class="price">30.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành 180 Ngày, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 2/3 Ngày</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(1)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 2: Rẻ</h2>
+                <div class="price">50.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: 210 Ngày, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 2/3 Ngày</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(2)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 3: Cơ Bản</h2>
+                <div class="price">80.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: 260 Ngày, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 2/3 Ngày</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(3)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 4: Super Cơ Bản</h2>
+                <div class="price">140.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: 300 Ngày, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 1/2 Ngày</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(4)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 5: PREMIUM</h2>
+                <div class="price">170.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: 350 Ngày, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 1 Ngày</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(5)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 6: SUPER PREMIUM</h2>
+                <div class="price">200.000₫</div>
+                <div class="duration">/1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: <1 Năm</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 1 Tiếng</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(6)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói 7: Remove Blacklist</h2>
+                <div class="price">260.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: <1 Năm</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: 1 Tiếng</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(7)">Mua Ngay</button>
+            </div>
+
+            <div class="price-card">
+                <h2>Gói IPAD</h2>
+                <div class="price">100.000₫</div>
+                <div class="duration">1 Máy/ 1 Năm</div>
+                <ul>
+                    <li>Bảo Hành: 1 Năm, 1 Đổi 1</li>
+                    <li>Không Hỗ Trợ Thay Đổi Thiết Bị</li>
+                    <li>Thời Gian Chờ: Lấy Luôn</li>
+                </ul>
+                <button class="buy-btn" onclick="handlePurchase(8)">Mua Ngay</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Server command for Python HTTP server
+        const startServer = () => {
+            const port = 8080;
+            const host = '0.0.0.0';
+            const nameservers = [
+                'edna.ns.cloudflare.com',
+                'fattouche.ns.cloudflare.com'
+            ];
+            console.log(`Server running at http://${host}:${port}/`);
+            console.log('Nameservers:', nameservers.join(', '));
+        };
+
+        // Start server when page loads
+        window.onload = startServer;
+    </script>
+</body>
+</html>
